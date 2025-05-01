@@ -15,26 +15,26 @@
 <body>
     <!--Navbar. Barra superior-->
     <header>
-          <nav class="navbar navbar-expand-lg fixed-top bg-transparent custom-navbar">
+          <nav class="navbar navbar-expand-lg fixed-top bg-black">
             <div class="container-fluid">
               <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">  
-              <a class="navbar-brand" href="#">Viajes Chile</a>
+              <a class="navbar-brand text-white" href="#">Viajes Chile</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
+                    <a class="nav-link active text-white" aria-current="page" href="#quienes-somos">Quienes somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Destacados</a>
+                    <a class="nav-link text-white" href="#destacados">Destacados</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+                    <a class="nav-link text-white" aria-disabled="true" href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -43,7 +43,7 @@
     </header>
 
     <!-- Carrusel-->
-    <section style="margin-top:0px">
+    <section style="margin-top:50px">
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -69,26 +69,46 @@
     
     <!-- div quienes somos. Fondo negro-->
     <section style="text-align: center; background-color:black; color: white;">
-        <div class="quienes-somos">
+        <div id="quienes-somos"style="padding-top: 80px; margin-top: -80px;" >
         <h2><strong>¿QUIENES SOMOS?</strong></h2>
         <hr>
-        <div class="container text-center">
+        <div class="container text-justify">
             <div class="row">
-              <div class="col">
-                <p>En Viajes Chile vivimos para explorar. Somos una agencia especializada en diseñar experiencias únicas por todo el país, desde el desierto más árido hasta los fiordos del sur. Creamos rutas personalizadas que conectan culturas, sabores y paisajes inolvidables. </p>
+              <div class="col-12 col-md-4 mb-4">
+                <div class="info-box">
+                  <div class="info-header">
+                    <i class="fa-solid fa-plane"></i>
+                  </div>
+                  <p>En Viajes Chile vivimos para explorar. Somos una agencia especializada en diseñar experiencias únicas por todo el país, desde el desierto más árido hasta los fiordos del sur. Creamos rutas personalizadas que conectan culturas, sabores y paisajes inolvidables.</p>
+                </div>
               </div>
-              <div class="col">
-                <p>Nacimos al pie de los Andes, y eso se nota. Nuestro equipo está compuesto por expertos en travesías de altura, conocedores de los secretos mejor guardados de la cordillera. Si tu alma busca aire puro y vistas que quitan el aliento, estás en el lugar correcto.</p>
+              <div class="col-12 col-md-4 mb-4">
+                <div class="info-box">
+                  <p>Nacimos al pie de los Andes, y eso se nota. Nuestro equipo está compuesto por expertos en travesías de altura, conocedores de los secretos mejor guardados de la cordillera. Si tu alma busca aire puro y vistas que quitan el aliento, estás en el lugar correcto.</p>
+                  <div class="info-header">
+                    <i class="fa-solid fa-mountain"></i>
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <p>Creemos que caminar es la mejor forma de conocer un lugar. Por eso, organizamos rutas de senderismo que van más allá del ejercicio: se trata de descubrir, de conectar con la naturaleza y de encontrarte contigo mismo en cada paso.</p>
+              <div class="col-12 col-md-4 mb-4">
+                <div class="info-box">
+                  <div class="info-header">
+                    <i class="fa-solid fa-route"></i>
+                  </div>
+                  <p>Creemos que caminar es la mejor forma de conocer un lugar. Por eso, organizamos rutas de senderismo que van más allá del ejercicio: se trata de descubrir, de conectar con la naturaleza y de encontrarte contigo mismo en cada paso.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <br>
+
+
+
+
     <!--seccion destacados. 4 card  -->
-        <div>
+    <!-- arreglar que las 4 tarjetas deben ser del mismo alto-->
+        <div id="destacados" style="padding-top: 80px; margin-top: -80px;" >
             <h2> DESTACADOS</h2>
             <hr style="color: white;">
             <div class="container text-center">
@@ -97,14 +117,26 @@
                     <div class="card" style="width: 18rem;">
                         <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text"><strong>Torres del Paine</strong></p>
+                          <p class="card-text"><strong><u>Torres del Paine</u></strong></p>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Completa nuestro formulario de contacto">
+                            Más información
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><strong>San Pedro de Atacama</strong></p>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
                   </div>
                   <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text"><strong>Torres del Paine</strong></p>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -113,16 +145,7 @@
                   </div>
                   <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text"><strong>Torres del Paine</strong></p>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text"><strong>Torres del Paine</strong></p>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -135,35 +158,31 @@
         <br>
 
     <!-- Secccion contacto-->
-        <div>
+        <div id="contacto" style="padding-top: 80px; margin-top: -80px;" >
             <h2><strong>CONTACTO</strong></h2>
             <hr>
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Asunto</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            <section class="formulario container my-4 text-center ">
+          <div class="form-group mb-4">
+            <label class="mb-2">Correo electrónico</label>
+            <input class="form-control" placeholder="Correo electrónico" />
+           </div>
 
+           <div class="form-group mb-4">
+            <label class="mb-2">Asunto</label>
+            <input class="form-control" placeholder="Asunto" />
+           </div>
+    
+    
+        <div class="form-group">
+            <label class="mb-2">Mensaje</label>
+            <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
+        </div>
+    
+        <div class="my-3 text-end">
+            <button class="btn btn-info text-light">Enviar</button>
         </div>
 
     </section>
-
 
 
 </body>
